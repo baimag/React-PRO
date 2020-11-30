@@ -1,0 +1,9 @@
+.main{
+    justify-content: space-around;
+    text-align: center;
+}
+.content{
+    padding: 10px 10px;
+    font-size: 2em;
+}
+

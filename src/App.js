@@ -3,7 +3,8 @@ import {loadTodos} from "./action";
 import React, {useEffect} from "react";
 
 function App() {
-    const todos = useSelector(state => state);
+    const todos = useSelector(state => state.todos);
+    const loading = useSelector(state => state.loading);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -11,15 +12,15 @@ function App() {
     },[]);
 
     return(
-        //?
-        <div>
-            {todos.map(todo => {
+        <div className={"main"}>
+            Список дел : {loading ? "Идет загрузка дел" : (todos.map(todo => {
                 return(
-                    <div>
+                    <div className={"content"}>
                         {todo.title}
                     </div>
                 )
-            })}
+            }))}
+
         </div>
     )
 }

@@ -4,12 +4,24 @@ import App from './App';
 import {applyMiddleware, createStore} from "redux";
 import {Provider} from "react-redux";
 import thunk from "redux-thunk";
+import "./style.css"
 
-const initialState = [];
+const initialState = {
+    todos: [],
+    loading: false
+
+};
 const reducer = (state = initialState, action) => {
     switch (action.type){
+        case "start":
+            return {
+                loading: true
+            }
+
         case "load":
-            return action.peyload;
+            return {
+                todos: action.payload
+            }
         default: return state;
     }
 };
