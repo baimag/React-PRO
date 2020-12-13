@@ -1,9 +1,64 @@
 .main{
+    width: 1100px;
+    margin: auto;
+    display: flex;
     justify-content: space-around;
+}
+.albums{
+    width: 300px;
+}
+.albums ul, .photos ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.albums ul li, .photos ul li{
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid aliceblue;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+.albums ul li:hover{
+    background-color: lightskyblue;
+    border-radius: 5px;
+    color: white;
+}
+.albums ul li:active{
+    background-color: orange;
+    border-radius: 5px;
+    color: black;
+}
+.photos ul li {
+    cursor: default;
+}
+.no-photo{
+    font-size: 20px;
+    padding-top: 300px;
+    flex: 1;
     text-align: center;
 }
-.content{
-    padding: 10px 10px;
-    font-size: 2em;
+body{
+    font-family: 'Poppins', sans-serif;
 }
+.filter input{
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+}
+.filter{
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
 
