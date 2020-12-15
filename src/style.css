@@ -52,6 +52,12 @@ body{
 .filter{
     margin-bottom: 15px;
 }
+.active{
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
+
 
 
 

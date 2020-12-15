@@ -1,4 +1,4 @@
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {selectAlbum} from "../redux/action";
 
 function Alb(props) {
@@ -6,9 +6,11 @@ function Alb(props) {
     const nendleSelectedAlbum = () => {
         dispatch(selectAlbum(props.alb.id))
     }
+
+
     return(
         <li onClick={nendleSelectedAlbum} className="Alb">
-            {props.alb.title}
+           {props.alb.title}
         </li>
     )
 }
