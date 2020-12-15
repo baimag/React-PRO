@@ -21,6 +21,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: .3s;
+    opacity: 0.5
 }
 .albums ul li:hover{
     background-color: lightskyblue;
@@ -52,10 +53,9 @@ body{
 .filter{
     margin-bottom: 15px;
 }
-.active{
-    background-color: red;
-    border-radius: 5px;
-    color: white;
+.active {
+    opacity: 1;
+    background-color: lightskyblue;
 }
 
 
