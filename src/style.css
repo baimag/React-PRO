@@ -57,6 +57,16 @@ body{
     opacity: 1;
     background-color: lightskyblue;
 }
+a{
+    text-decoration: none;
+}
+a:active{
+    background-color: orange;
+    border-radius: 5px;
+    color: black;
+}
+
+
 
 
 
